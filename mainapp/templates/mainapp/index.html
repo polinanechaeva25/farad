@@ -1,5 +1,5 @@
 {% extends 'mainapp/base.html'%}
-{% load static %}
+{% load static i18n %}
 
 {% block 'content' %}
     <header id="header" class="header">
@@ -9,12 +9,11 @@
             <div class="row">
                 <div class="col-lg-7 col-xl-5">
                     <div class="text-container">
-                        <h1 class="h1-large">Конденсаторный&nbsp;завод<br>UzFarad</h1>
+                        <h1 class="h1-large"> {% trans 'Конденсаторный&nbsp;завод' %}<br>UzFarad</h1>
                         <p class="p-large">
-                            Производство пленочных конденсаторов для различных областей применения.
-                            Разработка и изготовление конденсаторов в кратчайшие сроки по вашему техническому заданию.
+                        {% trans 'Производство пленочных конденсаторов для различных областей применения. Разработка и изготовление конденсаторов в кратчайшие сроки по вашему техническому заданию.' %}
                         </p>
-                        <a class="btn-solid-lg" href="#details">Подробнее</a>
+                        <a class="btn-solid-lg" href="#details">{% trans 'Подробнее' %}</a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-xl-7">
@@ -30,33 +29,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7">
-                    <h2>«UzFarad» </h2>
+                    <h2>«UzFarad»</h2>
                     <p>
-                        Предприятие <span class="bold-name">UzFarad</span> специализируется на производстве пленочных конденсаторов
-                        для различных областей применения в промышленности, медицине, транспорте и связи.
+                        {% trans 'Предприятие' %}<span class="bold-name"> UzFarad</span>
+                        {% trans 'специализируется на производстве пленочных конденсаторов для различных областей применения в промышленности, медицине, транспорте и связи.' %}
                     </p>
                     <p>
-                        Мы разработаем в кратчайшие сроки и изготовим конденсаторы по вашему техническому заданию.
+                        {% trans 'Мы разработаем в кратчайшие сроки и изготовим конденсаторы по вашему техническому заданию.' %}
                     </p>
                     <p>
-                        Размер партии от единиц до нескольких тысяч штук.
+                        {% trans 'Размер партии от единиц до нескольких тысяч штук.' %}
                     </p>
                     <p>
-                        Применение современных материалов и технологий позволяет нам создавать компактные,
-                        экологически безопасные конденсаторы высокого качества.
+                        {% trans 'Применение современных материалов и технологий позволяет нам создавать компактные, экологически безопасные конденсаторы высокого качества.' %}
                     </p>
                     <p>
-                        Характеристики и качество конденсаторов <span class="bold-name">UzFarad</span> не уступают
-                        продукции известных мировых производителей и позволяют получить вам выгодное решение
-                        при производстве оборудования и электронных устройств.
+                        {% trans 'Характеристики и качество конденсаторов' %} <span class="bold-name">UzFarad</span>
+                        {% trans 'не уступают продукции известных мировых производителей и позволяют получить вам выгодное решение при производстве оборудования и электронных устройств.' %}
                     </p>
                     <p>
-                        Мы выпускаем конденсаторы широкого применения для работы в цепях постоянного,
-                        переменного и пульсирующего токов, а также в импульсном режиме.
+                        {% trans 'Мы выпускаем конденсаторы широкого применения для работы в цепях постоянного, переменного и пульсирующего токов, а также в импульсном режиме.' %}
                     </p>
                 </div>
                 <div class="col-xl-5">
-                    <img class="img-fluid" src="{% static 'images/sun_battery.jpg' %}" alt="alternative" style="padding-top: 25%;">
+                    <img class="img-fluid pt-25" src="{% static 'images/sun_battery.jpg' %}" alt="alternative">
                 </div>
             </div>
         </div>
@@ -68,25 +64,21 @@
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="image-container">
-                        <img class="img-fluid" src="{% static 'images/lep.jpg' %}" alt="alternative" style="padding-top: 39%;">
+                        <img class="img-fluid pt-39" src="{% static 'images/lep.jpg' %}" alt="alternative">
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-7">
                     <div class="text-container">
-                        <h2>Предприятие UzFarad</h2>
+                        <h2>{% trans 'Предприятие' %} UzFarad</h2>
                         <p>
-                            Наша приверженность принципам устойчивого развития и защиты окружающей среды определяется
-                            Международным стандартом систем менеджмента качества ISO 9001.
+                            {% trans 'Наша приверженность принципам устойчивого развития и защиты окружающей среды определяется Международным стандартом систем менеджмента качества ISO 9001.' %}
                         </p>
                         <p>
-                            Намотка конденсаторов осуществляется в помещениях особой категории чистоты.
-                            Термическая сушка в вакууме с последующим заполнением инертным газом
-                            обеспечивает долговечную работу, стабильность параметров и надежность конденсаторов UzFarad
+                            {% trans 'Намотка конденсаторов осуществляется в помещениях особой категории чистоты. Термическая сушка в вакууме с последующим заполнением инертным газом обеспечивает долговечную работу, стабильность параметров и надежность конденсаторов UzFarad' %}
                         </p>
                         <p>
                             <span class="bold-name">
-                                Многоуровневый контроль параметров и испытание готовой продукции повышенным напряжением
-                                в лаборатории гарантирует соответствие каждого изделия запросу покупателя.
+                                {% trans 'Многоуровневый контроль параметров и испытание готовой продукции повышенным напряжением в лаборатории гарантирует соответствие каждого изделия запросу покупателя.' %}
                             </span>
                         </p>
                     </div>
@@ -100,11 +92,8 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="text-container">
-                        <h2>Основные характеристики конденсаторов UzFarad:</h2>
-                        <p>Цилиндрический корпус изготовлен из полипропилена.
-                            Внутренняя конструкция предназначена для предотвращения движения,
-                            когда конденсатор подвергается механическому удару или вибрации.
-                            Инертный процесс сварки обеспечивает герметичность корпуса.
+                        <h2>{% trans 'Основные характеристики конденсаторов UzFarad' %}:</h2>
+                        <p>{% trans 'Цилиндрический корпус изготовлен из полипропилена. Внутренняя конструкция предназначена для предотвращения движения, когда конденсатор подвергается механическому удару или вибрации. Инертный процесс сварки обеспечивает герметичность корпуса.' %}
                         </p>
                         <div class="cond-back">
                             <img class="condenser" src="{% static 'images/condensers.jpg' %}">
@@ -119,7 +108,7 @@
                                 <img class="icon-desc" src="{% static 'images/cond.png' %}">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">C - емкость от&nbsp;0,0001 до&nbsp;30 &mu;F;</h5>
+                                <h5 class="card-title">C - {% trans 'емкость от&nbsp;0,0001 до&nbsp;30' %} &mu;F</h5>
                             </div>
                         </div>
 
@@ -128,7 +117,7 @@
                                 <img class="icon-desc" src="{% static 'images/u.png' %}">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">U<sub>N</sub> - рабочее напряжение до 30 kV;</h5>
+                                <h5 class="card-title">U<sub>N</sub> - {% trans 'рабочее напряжение до' %} 30 kV</h5>
                             </div>
                         </div>
 
@@ -137,7 +126,7 @@
                                 <img class="icon-desc" src="{% static 'images/ind.png' %}" style="margin-top: 20px;">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">L - низкая индуктивность до 10 nHn;</h5>
+                                <h5 class="card-title">L - {% trans 'низкая индуктивность до' %} 10 nHn</h5>
                             </div>
                         </div>
 
@@ -146,7 +135,7 @@
                                 <img class="icon-desc" src="{% static 'images/lost.png' %}">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">tg &delta; - низкие тепловые потери до 0,0005;</h5>
+                                <h5 class="card-title">tg &delta; - {% trans 'низкие тепловые потери до' %} 0,0005</h5>
                             </div>
                         </div>
 
@@ -155,19 +144,18 @@
                                 <img class="icon-desc" src="{% static 'images/cels.png' %}">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">t &deg;C - интервал температур от - 50 до + 70 градусов Цельсия;</h5>
+                                <h5 class="card-title">t &deg;C - {% trans 'интервал температур от -&nbsp;50 до +&nbsp;70&deg;C' %}</h5>
                             </div>
                         </div>
 
                         <div class="card">
                             <div class="card-icon">
-                                <img class="icon-desc" src="{% static 'images/recycle.png' %}">
+                                <img class="icon-desc" src="{% static 'images/frequency.png' %}">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Свойство самовосстановления</h5>
+                                <h5 class="card-title">F - {% trans 'Рабочая частота от&nbsp;1&nbsp;Hz до&nbsp;500&nbsp;kHz' %}</h5>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -178,60 +166,48 @@
         <img class="decoration-star" src="{% static 'images/background.svg' %}" alt="alternative">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-xl-4">
+                <div class="col-lg-4 col-xl-4 d-none">
                     <div class="image-container">
-                        <img class="img-fluid" src="{% static 'images/green-battery.jpg' %}" alt="alternative" style="padding-top: 25%; width: 80%;">
+                        <img class="img-fluid green-battery d-none" src="{% static 'images/green-battery.png' %}" alt="alternative">
                     </div>
                 </div>
                 <div class="col-lg-8 col-xl-8">
                     <div class="text-container">
-                        <h2>Основная номенклатура конденсаторов UzFarad*</h2>
+                        <h2>{% trans 'Основная номенклатура конденсаторов UzFarad' %}*</h2>
                         <ul class="li-space-lg list-unstyled">
                             <li class="d-flex">
                                 <i class="fas fa-square"></i>
                                 <div class="flex-grow-1">
-                                    <span>Импульсные конденсаторы UF1&ndash;&hellip;&nbsp;</span>&mdash;
-                                    для накопителей энергии генераторов мощных импульсов тока.
-                                    Предназначены для «быстрого разряда» в силовой электронике
-                                    и других энергоемких устройствах.
-                                    Напряжение - от 1 до 10 kV, емкость - от 0,1 до 10 &mu;F.
+                                    <span>{% trans 'Импульсные конденсаторы' %} UF1&ndash;&hellip;&nbsp;</span>&mdash;
+                                    {% trans 'для накопителей энергии генераторов мощных импульсов тока. Предназначены для «быстрого разряда» в силовой электронике и других энергоемких устройствах. Напряжение - от 1 до 10 kV; емкость - от 0.1 до 10 &mu;F.' %}
                                 </div>
                             </li>
                             <li class="d-flex">
                                 <i class="fas fa-square"></i>
                                 <div class="flex-grow-1">
-                                    <span>Высоковольтные и высокочастотные конденсаторы UF2&ndash;&hellip;&nbsp;</span>&mdash;
-                                    для источников вторичного питания.
-                                    Предназначены для работы в импульсном и фильтровом режиме.
-                                    Напряжение - от 1 до 10 kV, емкость - от 0,0001 до 10 &mu;F.
-                                    Рабочая частота от 1 Hz до 500 kHz.
+                                    <span>{% trans 'Высоковольтные и высокочастотные конденсаторы' %} UF2&ndash;&hellip;&nbsp;</span>&mdash;
+                                    {% trans 'для источников вторичного питания. Предназначены для работы в импульсном и фильтровом режиме. Напряжение - от 1 до 10 kV; емкость - от 0.0001 до 10 &mu;F. Рабочая частота от 1 Hz до 500 kHz.' %}
                                 </div>
                             </li>
                             <li class="d-flex">
                                 <i class="fas fa-square"></i>
                                 <div class="flex-grow-1">
-                                    <span>Демпфирующие конденсаторы типа UF3&ndash;&hellip;&nbsp;</span>&mdash;
-                                    для работы в демпфирующих цепях мощных тиристорных преобразователей.
-                                    Напряжение - от 0,4 до 6 kV, емкость - от 0,1 до 30 &mu;F.
-                                    Рабочая частота от 1 Hz до 100 kHz.
+                                    <span>{% trans 'Демпфирующие конденсаторы типа' %} UF3&ndash;&hellip;&nbsp;</span>&mdash;
+                                    {% trans 'для работы в демпфирующих цепях мощных тиристорных преобразователей. Напряжение - от 0.4 до 6 kV; емкость - от 0.1 до 30 &mu;F. Рабочая частота от 1 Hz до 100 kHz.' %}
                                 </div>
                             </li>
                             <li class="d-flex">
                                 <i class="fas fa-square"></i>
                                 <div class="flex-grow-1">
-                                    <span>Накопительные конденсаторы UF4&ndash;&hellip;&nbsp;</span>&mdash;
-                                    имеют широкое применение в силовой электронике и других энергоёмких устройствах,
-                                    где требуется короткое время разряда.
-                                    Напряжение - от 1 до 10 kV, емкость - от 0,0001 до 10 &mu;F.
+                                    <span>{% trans 'Накопительные конденсаторы' %} UF4&ndash;&hellip;&nbsp;</span>&mdash;
+                                    {% trans 'имеют широкое применение в силовой электронике и других энергоёмких устройствах, где требуется короткое время разряда. Напряжение - от 1 до 10 kV; емкость - от 0.0001 до 10 &mu;F.' %}
                                 </div>
                             </li>
                             <li class="d-flex">
                                 <i class="fas fa-square"></i>
                                 <div class="flex-grow-1">
-                                    <span>Специальные конденсаторы UF0&ndash;&hellip;&nbsp;</span>&mdash;
-                                    производятся по индивидуальному техническому и применяются преимущественно
-                                    в научных исследованиях разработках.
-                                    Напряжение - от 0,4 до 30 kV, емкость - от 0,0001 до 30 &mu;F.
+                                    <span>{% trans 'Специальные конденсаторы' %} UF0&ndash;&hellip;&nbsp;</span>&mdash;
+                                    {% trans 'производятся по индивидуальному техническому и применяются преимущественно в научных исследованиях разработках. Напряжение - от 0.4 до 30 kV; емкость - от 0.0001 до 30 &mu;F.' %}
                                 </div>
                             </li>
                         </ul>
@@ -239,11 +215,11 @@
                 </div>
             </div>
             <p class="p-small">
-                *Пример обозначения конденсатора <span>UF3-3.0-0.47&plusmn;10%</span>: <br>
-                <span>UF3</span> - демпфирующий;
-                <span>3.0</span> - рабочее напряжение U<sub>N</sub> = 3.0 kV;
-                <span>0.47</span> - номинальная емкость C = 0.47 &mu;F;
-                <span>&plusmn;10%</span> - допустимое отклонение емкости
+                {% trans '*Пример обозначения конденсатора' %} <span>UF3-3.0-0.47&plusmn;10%</span>: <br>
+                <span>UF3</span> - {% trans 'демпфирующий;' %}
+                <span>3.0</span> - {% trans 'рабочее напряжение' %} U<sub>N</sub> = 3.0 kV;
+                <span>0.47</span> - {% trans 'номинальная емкость' %} C = 0.47 &mu;F;
+                <span>&plusmn;10%</span> - {% trans 'допустимое отклонение емкости' %}
             </p>
         </div>
     </div>
@@ -252,21 +228,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Производство</h2><br>
+                    <h2>{% trans 'Производство' %}</h2><br>
+
+
                     <div class="gallery">
                         <div class="row-custom">
-                            <img class="gallery-item" src="{% static 'images/manufacture-1.jpg' %}"
-                                 style="width: 50%; object-fit: cover; height: 100%;">
-                            <img class="gallery-item" src="{% static 'images/manufacture-2.jpg' %}"
-                            style="width: 50%; object-fit: cover; height: 100%;">
+                            <img class="gallery-item" src="{% static 'images/manufacture-1.jpg' %}">
+                            <img class="gallery-item" src="{% static 'images/manufacture-4.jpg' %}">
                         </div>
-                        <div class="row-custom" style="top: -315px; position: relative;">
-                            <img class="gallery-item" src="{% static 'images/manufacture-4.jpg' %}"
-                            style="width: 50%; object-fit: cover; height: 100%; padding-top: 324px;">
-                            <img class="gallery-item" src="{% static 'images/manufacture-3.jpg' %}"
-                            style="width: 50%; object-fit: cover; height: 100%;">
+                        <div class="row-custom">
+                            <img class="gallery-item" src="{% static 'images/manufacture-2.jpg' %}">
+                            <img class="gallery-item" src="{% static 'images/manufacture-3.jpg' %}">
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -278,31 +254,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7963131871957!2d69.16631081537166!3d41.29153727927303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae890cb2c92ee1%3A0x7c96ab86dd90987!2zMjYg0YPQu9C40YbQsCDQpNC-0LfQuNC70YLQtdC_0LAsINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1678970372682!5m2!1sru!2sru"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7963131871957!2d69.16631081537166!3d41.29153727927303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae890cb2c92ee1%3A0x7c96ab86dd90987!2zMjYg0YPQu9C40YbQsCDQpNC-0LfQuNC70YLQtdC_0LAsINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1s{% trans 'ru' %}!2s{% trans 'ru' %}!4v1678970372682!5m2!1s{% trans 'ru' %}!2s{% trans 'ru' %}"
                             width="100%" height="60%" style="box-shadow: 0px 0px 20px 0px #000;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 <div class="contact-info">
-                    <p><i class="fa fa-location-arrow mr-15" aria-hidden="true"></i>100117, Узбекистан, г. Ташкент, ул. Фазилтепа, 26А</p>
+                    <p><i class="fa fa-location-arrow mr-15" aria-hidden="true"></i>{% trans '100117, Узбекистан, г. Ташкент, ул. Фазилтепа, 26А' %}</p>
                     <p><i class="fa fa-phone mr-15" aria-hidden="true"></i>+998(97)747 9766</p>
                     <p><i class="fa fa-envelope mr-15" aria-hidden="true"></i>example@uzfarad.uz</p>
                 </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Свяжитесь с нами</h2>
+                        <h2>{% trans 'Свяжитесь с нами' %}</h2>
                         <form>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" placeholder="Имя" required>
+                                <input type="text" class="form-control-input" placeholder="{% trans 'Имя' %}" required>
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control-input" placeholder="Email" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control-textarea" placeholder="Сообщение" required></textarea>
+                                <textarea class="form-control-textarea" placeholder="{% trans 'Сообщение' %}" required></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">Отрправить письмо</button>
+                                <button type="submit" class="form-control-submit-button">{% trans 'Отправить письмо' %}</button>
                             </div>
                         </form>
                     </div>

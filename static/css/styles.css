@@ -573,7 +573,6 @@ a:hover {
 /********************/
 .cards-1 {
 	padding-top: 9.5rem;
-	padding-bottom: 5.5rem;
 }
 
 .cards-1 h2 {
@@ -613,16 +612,13 @@ a:hover {
 	text-align: center;
 	vertical-align: top;
 }
-
 .cards-1 .card-icon {
-	width: 90px;
-	height: 90px;
-	margin-right: auto;
-	margin-bottom: 1.5rem;
-	margin-left: auto;
-	border-radius: 50%;
-	background-color: #ffffff;
-	text-align: center;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
 }
 
 .cards-1 .card-icon .far,
@@ -631,15 +627,37 @@ a:hover {
 	color: #cc2973;
 	font-size: 3.75rem;
 }
-
 .cards-1 .card-body {
 	padding: 0;
 }
-
 .cards-1 .card-title {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: unset;
-    font-size: 22px;
+}
+@media (min-width: 1200px){
+    .cards-1 .card-title {
+        font-size: 22px;
+    }
+    .cards-1 .card-icon {
+        width: 90px;
+        height: 90px;
+    }
+    .cards-1 {
+	    padding-bottom: 5.5rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1200px){
+    .cards-1 .card-title {
+        font-size: 20px;
+    }
+    .cards-1 .card-icon {
+        width: 75px;
+        height: 75px;
+    }
+    .cards-1 {
+	    padding-bottom: 2rem;
+    }
 }
 
 
@@ -1521,9 +1539,17 @@ a:hover {
 .bold-name{
     font-weight: bold;
 }
-.icon-desc{
-    width: 70px;
-    margin-left: 25px;
+@media (min-width: 1200px){
+    .icon-desc{
+        width: 70px;
+        margin-left: 25px;
+    }
+}
+@media (min-width: 0px) and (max-width: 1200px){
+    .icon-desc{
+        width: 55px;
+        margin-left: 25px;
+    }
 }
 .condenser{
     width: 300px;
@@ -1540,18 +1566,7 @@ a:hover {
 .main-picture{
     width: 500px;
 }
-.gallery{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -20%;
-}
-.row-custom{
-    display: flex;
-    flex-direction: row;
-}
-.gallery-item{
-    padding: 10px;
-}
+
 .contact-info{
     width: 80%;
     margin: auto;
@@ -1566,4 +1581,141 @@ a:hover {
 }
 .menu-table li{
     flex: 0 0 50%;
+}
+.green-battery{
+    padding-top: 25%;
+    width: 80%;
+}
+.gallery {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-custom {
+    flex: 0 0 50%;
+}
+img.gallery-item {
+    width: 100%;
+    padding: 10px;
+}
+@media (min-width: 1200px){
+    .pt-25{
+        padding-top: 25%;
+    }
+    .pt-39{
+        padding-top: 39%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .pt-25{
+        padding-top: 0;
+    }
+    .pt-39{
+        padding-top: 18%;
+    }
+    .footer .footer-col.second{
+        width: 240px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .pt-25{
+        padding-top: 0;
+    }
+    .pt-39{
+        padding-top: 18%;
+        padding-bottom: 5%;
+    }
+    .footer .footer-col.second{
+        width: 240px;
+    }
+    .basic-3{
+        padding: 0;
+    }
+    .condenser{
+        width: 500px;
+    }
+    .cond-back{
+        width: 520px;
+    }
+    .d-none{
+        display: none;
+    }
+    .contact-info{
+        padding-bottom: 25%;
+        margin-bottom: 10%;
+    }
+    .footer .footer-col.first {
+        width: 320px;
+    }
+    .footer .footer-col.third {
+        width: 320px;
+    }
+}
+@media (min-width: 500px) and (max-width: 768px){
+    .pt-25{
+        padding-top: 0;
+    }
+    .pt-39{
+        padding-top: 18%;
+        padding-bottom: 5%;
+    }
+    .footer .footer-col.second{
+        width: 240px;
+    }
+    .basic-3{
+        padding: 0;
+    }
+    .condenser{
+        width: 370px;
+    }
+    .cond-back{
+        width: 390px;
+    }
+    .d-none{
+        display: none;
+    }
+    .contact-info{
+        padding-bottom: 25%;
+        margin-bottom: 10%;
+    }
+    .footer .footer-col.first {
+        width: 320px;
+    }
+    .footer .footer-col.third {
+        width: 320px;
+    }
+}
+@media (min-width: 0px) and (max-width: 500px){
+    .pt-25{
+        padding-top: 0;
+    }
+    .pt-39{
+        padding-top: 18%;
+        padding-bottom: 5%;
+    }
+    .footer .footer-col.second{
+        width: 240px;
+    }
+    .basic-3{
+        padding: 0;
+    }
+    .condenser{
+        width: 290px;
+    }
+    .cond-back{
+        width: 310px;
+    }
+    .d-none{
+        display: none;
+    }
+    .contact-info{
+        padding-bottom: 25%;
+        margin-bottom: 10%;
+    }
+    .footer .footer-col.first {
+        width: 320px;
+    }
+    .footer .footer-col.third {
+        width: 320px;
+    }
 }
