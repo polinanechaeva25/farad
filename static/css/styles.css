@@ -1598,6 +1598,7 @@ img.gallery-item {
     width: 100%;
     padding: 10px;
 }
+
 @media (min-width: 1200px){
     .pt-25{
         padding-top: 25%;
@@ -1705,7 +1706,7 @@ img.gallery-item {
     .cond-back{
         width: 310px;
     }
-    .d-none{
+    .dis-none{
         display: none;
     }
     .contact-info{
