@@ -120,7 +120,7 @@ h6 {
 
 a {
 	color: #6c717b;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {
@@ -329,7 +329,7 @@ a:hover {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 5.5rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -510,8 +510,8 @@ a:hover {
 /*     Introduction     */
 /************************/
 .basic-1 {
-	padding-top: 9.25rem;
-	padding-bottom: 8.75rem;
+	padding-top: 4.25rem;
+	padding-bottom: 5.75rem;
 }
 
 .basic-1 h2 {
@@ -524,8 +524,8 @@ a:hover {
 /*********************/
 .basic-2 {
 	position: relative;
-	padding-top: 9.5rem;
-	padding-bottom: 9.5rem;
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
 }
 
 .basic-2 .decoration-star {
@@ -543,7 +543,7 @@ a:hover {
 }
 
 .basic-2 .image-container {
-	margin-bottom: 5rem;
+        margin-bottom: 5rem;
 }
 
 .basic-2 h2 {
@@ -572,7 +572,7 @@ a:hover {
 /*     Services     */
 /********************/
 .cards-1 {
-	padding-top: 9.5rem;
+	padding-top: 6.5rem;
 }
 
 .cards-1 h2 {
@@ -667,8 +667,8 @@ a:hover {
 .basic-3 {
 	position: relative;
 	overflow: hidden;
-	padding-top: 9.5rem;
-	padding-bottom: 9.75rem;
+	padding-top: 1.5rem;
+	padding-bottom: 2.75rem;
 }
 
 .basic-3 .decoration-star {
@@ -702,7 +702,7 @@ a:hover {
 /*     Invitation     */
 /**********************/
 .basic-4 {
-	padding-top: 9.25rem;
+	padding-top: 4.25rem;
 	text-align: center;
 }
 
@@ -852,7 +852,7 @@ a:hover {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 6.5rem;
+	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
@@ -1067,7 +1067,11 @@ a:hover {
 	/* end of extra pages */
 }
 /* end of min-width 768px */
-
+@media (max-width: 992px) {
+    .basic-2 .image-container {
+        display: none;
+    }
+}
 
 /* Min-width 992px */
 @media (min-width: 992px) {
@@ -1200,6 +1204,7 @@ a:hover {
 
 	.basic-2 .image-container {
 		margin-bottom: 0;
+        display: block;
 	}
 	/* end of details 1 */
 
@@ -1314,7 +1319,6 @@ a:hover {
 	/* end of extra pages */
 }
 /* end of min-width 992px */
-
 
 /* Min-width 1200px */
 @media (min-width: 1200px) {
@@ -1519,21 +1523,21 @@ a:hover {
 
 /* Min-width 1400px */
 @media (min-width: 1400px) {
-	
+
 	/* Header */
 	/*.header .decoration-star {
 		top: 120px;
 		left: -250px;
 		width: 600px;
 	}
-	
+
 	.header .decoration-star-2 {
 		top: 60px;
 		right: -300px;
 		width: 700px;
 	}*/
 	/* end of header */
-	
+
 }
 /* end of min-width 1400px */
 .bold-name{
@@ -1628,6 +1632,9 @@ img.gallery-item {
     }
     .footer .footer-col.second{
         width: 240px;
+        display: inline-block;
+        margin-right: 1.75rem;
+        vertical-align: top;
     }
     .basic-3{
         padding: 0;
@@ -1647,6 +1654,9 @@ img.gallery-item {
     }
     .footer .footer-col.first {
         width: 320px;
+        display: inline-block;
+        margin-right: 1.75rem;
+        vertical-align: top;
     }
     .footer .footer-col.third {
         width: 320px;
@@ -1695,16 +1705,10 @@ img.gallery-item {
         padding-bottom: 5%;
     }
     .footer .footer-col.second{
-        width: 240px;
+        width: 90%;
     }
     .basic-3{
         padding: 0;
-    }
-    .condenser{
-        width: 290px;
-    }
-    .cond-back{
-        width: 310px;
     }
     .dis-none{
         display: none;
@@ -1714,9 +1718,82 @@ img.gallery-item {
         margin-bottom: 10%;
     }
     .footer .footer-col.first {
-        width: 320px;
+        width: 90%;
     }
     .footer .footer-col.third {
-        width: 320px;
+        width: 90%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .col-lg-1 {
+        flex: 0 0 auto;
+        width: 9% !important;
+    }
+    .row-custom-2>*{
+        width: auto;
+    }
+}
+@media (min-width: 0px) and (max-width: 768px){
+    .col-lg-1 {
+        margin-bottom: 5%;
+    }
+}
+@media (min-width: 375px) and (max-width: 768px){
+    .header .h1-large {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 375px){
+    .header .h1-large {
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 425px) and (max-width: 500px){
+    .cond-back{
+        width: 310px;
+    }
+    .condenser{
+        width: 290px;
+    }
+}
+@media (min-width: 375px) and (max-width: 425px){
+    .cond-back{
+        width: 240px;
+    }
+    .condenser{
+        width: 220px;
+    }
+}
+@media (max-width: 375px){
+    .cond-back{
+        width: 90%;
+        margin: auto;
+        background: #37405600;
+    }
+    .condenser{
+        width: 90%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px){
+    .cards-1 .card-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 320px) and (max-width: 425px){
+    .cards-1 .card{
+        flex: 0 0 33%;
+    }
+}
+@media (max-width: 320px){
+    .cards-1 .card{
+        flex: 0 0 31%;
+    }
+}
+@media (max-width: 375px){
+    .temp-pb-20{
+        padding-bottom: 20px;
     }
 }
