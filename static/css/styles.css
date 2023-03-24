@@ -1548,10 +1548,18 @@ a:hover {
         width: 70px;
         margin-left: 25px;
     }
+    .icon-desc.warm-lost{
+        width: 100px;
+        margin-left: 25px;
+    }
 }
 @media (min-width: 0px) and (max-width: 1200px){
     .icon-desc{
         width: 55px;
+        margin-left: 25px;
+    }
+    .icon-desc.warm-lost{
+        width: 70px;
         margin-left: 25px;
     }
 }

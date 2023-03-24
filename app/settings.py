@@ -117,6 +117,7 @@ LANGUAGES = (
     ('ru', gettext('Russia')),
     ('en', gettext('English')),
 )
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
