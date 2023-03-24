@@ -265,15 +265,16 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>{% trans 'Свяжитесь с нами' %}</h2>
-                        <form>
+                        <form action="{% url 'mainapp:send_email' %}" method="post">
+                            {% csrf_token %}
                             <div class="form-group">
-                                <input type="text" class="form-control-input" placeholder="{% trans 'Имя' %}" required>
+                                <input type="text" id="name" name="name" class="form-control-input" placeholder="{% trans 'Имя' %}" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control-input" placeholder="Email" required>
+                                <input type="email" id="email" name="email" class="form-control-input" placeholder="Email" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control-textarea" placeholder="{% trans 'Сообщение' %}" required></textarea>
+                                <textarea name="message" id="message" class="form-control-textarea" placeholder="{% trans 'Сообщение' %}" required></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="form-control-submit-button">{% trans 'Отправить письмо' %}</button>
