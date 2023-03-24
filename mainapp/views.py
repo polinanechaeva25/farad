@@ -28,7 +28,7 @@ class EmailView(View):
             email_body = f'Имя: {name}\nEmail: {email}\nСообщение: {message}'
             logger.error('SENDING EMAIL')
             send_mail(title, email_body, settings.EMAIL_HOST_USER,
-                      ['justitdevelopment@gmail.com'])  # justitdevelopment@gmail.com
+                      ['info@uzfarad.uz'])  # justitdevelopment@gmail.com
         except Exception as e:
             logger.fatal('ERROR:', e)
         else:
