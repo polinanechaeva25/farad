@@ -102,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'UTC'
 
@@ -114,10 +114,10 @@ USE_TZ = True
 
 gettext = lambda s: s
 LANGUAGES = (
-    ('ru', gettext('Russia')),
+    ('uz', gettext('Uzbek')),
     ('en', gettext('English')),
 )
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
